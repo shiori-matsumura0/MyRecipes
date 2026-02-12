@@ -43,7 +43,5 @@ CRUD処理を中心に、データベースを活用したアプリ開発を目�
 <img width="30%" height="2400" alt="Screenshot_1770859053" src="https://github.com/user-attachments/assets/1d70c188-6546-43f3-ac7d-425df52c3a33" />　<img width="30%" height="2400" alt="Screenshot_1770859312" src="https://github.com/user-attachments/assets/ef5ccded-1bd7-4ed7-b5b2-9f002577f2e4" />
 
 
-## GIF
-
 
 
