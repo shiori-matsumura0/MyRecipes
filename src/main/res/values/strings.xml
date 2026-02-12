@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">My Recipes</string>
+    <string name="menu_list_options_all">全て表示</string>
+    <string name="menu_list_options_fav">お気に入り</string>
+    <string name="menu_list_options_edit">編集</string>
+    <string name="menu_list_options_delete">削除</string>
+    <string name="fab_desc">レシピ追加</string>
+    <string name="tv_add_name">レシピ名</string>
+    <string name="tv_add_ingredients">材料</string>
+    <string name="tv_add_recipe">レシピ詳細</string>
+    <string name="tv_add_category">カテゴリー</string>
+    <string-array name="add_category">
+        <item>未選択</item>
+        <item>和食</item>
+        <item>洋食</item>
+        <item>中華</item>
+    </string-array>
+    <string-array name="add_main_ingredient">
+        <item>未選択</item>
+        <item>肉</item>
+        <item>魚</item>
+        <item>野菜</item>
+    </string-array>
+    <string-array name="add_dish_type">
+        <item>未選択</item>
+        <item>主菜</item>
+        <item>副菜</item>
+        <item>汁物</item>
+    </string-array>
+    <string name="tv_add_memo">メモ</string>
+    <string name="bt_add">追加</string>
+    <string name="bt_back">戻る</string>
+    <string name="bt_change">変更</string>
+    <string name="tv_add_cooking_time">調理時間</string>
+    <string name="tv_add_cooking_time_unit">分</string>
+    <string name="tv_detail_created_at">登録日時：</string>
+    <string name="tv_detail_updated_at">更新日時：</string>
+    <string name="tv_detail_ingredients_title">材料</string>
+    <string name="tv_detail_cooking_time_title">調理時間：</string>
+    <string name="tv_detail_category_title">カテゴリー：</string>
+    <string name="tv_detail_recipe_title">作り方</string>
+    <string name="tv_search_keyword_title">キーワード</string>
+    <string name="tv_search_cooking_time_title">調理時間</string>
+    <string name="tv_search_cooking_time_unit">分以内</string>
+    <string name="bt_search_cancel">キャンセル</string>
+    <string name="bt_search_search">検索</string>
+</resources>

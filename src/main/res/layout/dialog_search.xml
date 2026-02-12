@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSearchKeywordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tv_search_keyword_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSearchCategoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_add_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSearchKeywordTitle" />
+
+    <EditText
+        android:id="@+id/etSearchKeyword"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvSearchKeywordTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spSearchCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/add_category"
+        app:layout_constraintStart_toEndOf="@+id/tvSearchCategoryTitle"
+        app:layout_constraintTop_toBottomOf="@+id/etSearchKeyword" />
+
+    <CheckBox
+        android:id="@+id/cbSearchFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="お気に入りのみ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSearchCookingTimeTitle" />
+
+    <Button
+        android:id="@+id/btSearchCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#A5A5A5"
+        android:text="@string/bt_search_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btSearchSearch"
+        app:layout_constraintTop_toBottomOf="@+id/cbSearchFavorite" />
+
+    <Button
+        android:id="@+id/btSearchSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#A5A5A5"
+        android:text="@string/bt_search_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btSearchCancel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSearchFavorite" />
+
+    <TextView
+        android:id="@+id/tvSearchCookingTimeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_search_cooking_time_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSearchCategoryTitle" />
+
+    <EditText
+        android:id="@+id/etSearchCookingTime"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/tvSearchCookingTimeTitle"
+        app:layout_constraintTop_toBottomOf="@+id/spSearchCategory" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_search_cooking_time_unit"
+        app:layout_constraintStart_toEndOf="@+id/etSearchCookingTime"
+        app:layout_constraintTop_toBottomOf="@+id/spSearchCategory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

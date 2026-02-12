@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/tvAddNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/tv_add_name"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etAddName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <TextView
+        android:id="@+id/tvAddIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_add_ingredients"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddName" />
+
+    <EditText
+        android:id="@+id/etAddIngredients"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/etAddName" />
+
+    <TextView
+        android:id="@+id/tvAddRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_add_recipe"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddIngredients" />
+
+    <EditText
+        android:id="@+id/etAddRecipe"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/etAddIngredients" />
+
+    <TextView
+        android:id="@+id/tvAddCookingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_add_cooking_time"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spAddCategory" />
+
+    <EditText
+        android:id="@+id/etAddCookingTime"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/spAddCategory" />
+
+    <TextView
+        android:id="@+id/tvAddCookingTimeUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_add_cooking_time_unit"
+        app:layout_constraintStart_toEndOf="@+id/etAddCookingTime"
+        app:layout_constraintTop_toBottomOf="@+id/spAddCategory" />
+
+    <Spinner
+        android:id="@+id/spAddCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/add_category"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/etAddRecipe" />
+
+    <TextView
+        android:id="@+id/tvAddCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_add_category"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddRecipe" />
+
+    <ImageView
+        android:id="@+id/ivAddImage"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/no_image"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/etAddCookingTime" />
+
+    <TextView
+        android:id="@+id/tvAddImageTitle"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="画像"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddCookingTime" />
+
+    <Button
+        android:id="@+id/btAddSelectImage"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="104dp"
+        android:onClick="showImageChoiceDialog"
+        android:text="参照"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/ivAddImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddCookingTimeUnit" />
+
+
+    <!--    <Spinner-->
+<!--        android:id="@+id/spinner"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="9dp"-->
+<!--        android:entries="@array/add_dish_type"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/spAddCategory"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/etAddRecipe" />-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="7dp"-->
+<!--        android:entries="@array/add_main_ingredient"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/spinner"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/etAddRecipe" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
